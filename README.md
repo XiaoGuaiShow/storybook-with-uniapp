@@ -5,7 +5,7 @@
 ## 拉取仓库
 
 ```
-git clone git@gitlab.ceekeecloud.com:frontenddevelopment/tripwise-uniapp-ui.git
+git clone git@gitlab.ceekeecloud.com:frontenddevelopment/tripwise_storybook.git
 ```
 
 ## 安装依赖
