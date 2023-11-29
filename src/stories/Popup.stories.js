@@ -5,7 +5,7 @@ export default {
     component: Popup,
     tags: ['autodocs']
 };
-export const 示例1 = (args, { argTypes }) => ({
+export const 示例 = (args, { argTypes }) => ({
     props: Object.keys(argTypes),
     components: { Popup },
     template: `<div><Popup /><img src="${PopupImage}" /></div>`,
