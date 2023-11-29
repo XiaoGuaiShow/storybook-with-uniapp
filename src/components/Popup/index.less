@@ -1,0 +1,41 @@
+.popup-title {
+  position: relative;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #fff;
+  text-align: center;
+  .popup-title-text {
+    font-size: 32rpx;
+    color: #141414;
+    font-weight: 600;
+  }
+  .close-btn {
+    position: absolute;
+    right: 30rpx;
+    top: 0;
+  }
+}
+.popup-content {
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+.popup-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  & > * {
+    flex: 1;
+  }
+  button {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 8rpx;
+    margin-right: 20rpx;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

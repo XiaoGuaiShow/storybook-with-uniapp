@@ -1,24 +1,50 @@
-# tripwise
+# tripwise-uniapp-ui
 
-## Project setup
+# 快速上手
+
+## 拉取仓库
+
+```
+git clone git@gitlab.ceekeecloud.com:frontenddevelopment/tripwise-uniapp-ui.git
+```
+
+## 安装依赖
+
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## 启动项目
+
 ```
-yarn serve
+yarn storybook
 ```
 
-### Compiles and minifies for production
+## 打包
+
 ```
-yarn build
+yarn build-storybook
 ```
 
-### Lints and fixes files
+## 一键生成文档
+
 ```
-yarn lint
+yarn generate-docs
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 开发流程
+
+        1. 在`src/components`目录下新建组件文件夹，如`Button`, 组件首字母大写
+        2. 在`Button`目录下新建`index.vue`文件，粘贴复制的代码
+        3. 如需展示组件图片，可将图片放入当前组件目录下，即`Button`目录下
+        4. 运行一键生成文档命令即可
+
+## 代码规范
+
+### 需设置组件所有入参的默认值
+```
+  description: {
+     type: String,
+     default: '暂无数据',
+  },
+```

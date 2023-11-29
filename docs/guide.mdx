@@ -1,0 +1,74 @@
+import {Meta} from "@storybook/blocks";
+
+<Meta title="前言"/>
+
+<div className="sb-container">
+    <div className='sb-section-title'>
+        # 前言
+
+        目前，Storybook 与 uni-app不兼容，但是我们可以通过一些小技巧来实现 Storybook 的部分功能。
+
+        ## 可以实现的功能
+        - [√] 手动贴图，预览组件;
+        - [√] 使用Storybook自动生成组件文档，包括组件的props、slots、events等;
+        - [√] 自动生成对应的属性文档;
+        - [√] 自动替换组件内uni-app标签为常规标签;
+        - [x] 使用Storybook自动生成组件的交互示例;
+
+        ## TODO LIST
+        - [√] 支持less;
+        - [x] 支持样式属性rpx;
+        - [x] Storybook 兼容 uni-app 框架;
+        - [x] Storybook 需导入 uni-app 的基础组件库;
+        - [x] Storybook 识别 uni-app 的自定义标签， 如 view text 等;
+    </div>
+</div>
+<div className="sb-container">
+    <div className='sb-section-title'>
+        # 项目目录结构说明
+
+        - **/.storybook** - Storybook 配置文件
+        - **/docs** - 文档相关文件
+        - **/docs/guide** - 用户指南和教程
+        - **/scripts** - 脚本文件
+        - **/src** - 包含项目的源代码文件
+        - **/src/components** - 组件
+        - **/src/example** - Storybook示例 组件
+        - **/src/stories** - Storybook组件文档
+        - **/storybook-static** - 打包后的文件
+    </div>
+
+</div>
+
+<style>
+    {`
+      .sb-container {
+        margin-bottom: 48px;
+      }
+
+      .sb-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      .sb-section-title {
+        margin-bottom: 32px;
+      }
+
+      .sb-section a:not(h1 a, h2 a, h3 a) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .sb-addon-img {
+          left: 300px;
+        }
+      }
+`}
+</style>
