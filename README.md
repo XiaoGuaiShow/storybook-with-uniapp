@@ -1,4 +1,4 @@
-# tripwise-uniapp-ui
+# tripwise_storybook
 
 # 快速上手
 
